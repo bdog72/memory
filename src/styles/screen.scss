@@ -1,5 +1,4 @@
 @import 'utility';
-
 $base-text-size: 16px;
 $base-font-family: sans-serif;
 
@@ -12,16 +11,22 @@ body {
   margin: 0;
   font: $base-text-size / 1 $base-font-family;
 }
+h1 {
+  text-align: center;
+}
+// div {
+//   display: flex;
+//   justify-content: center;
+// }
 
-div {
+td {
+  border: 5px solid black;
+}
+
+table {
+  margin-top: 40px;
+  // margin-bottom: 20px;
   display: flex;
   justify-content: center;
-}
-
-  td {
-    border: 5px solid black;
-}
-
-  table {
-      margin-top: 50px;
+  flex-wrap: wrap;
 }
