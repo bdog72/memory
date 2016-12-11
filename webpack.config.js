@@ -40,14 +40,18 @@ const common = {
       test: /\.(png|jpe?g|gif|svg)$/,
       loader: 'file'
     }, {
-      test: /\.(sass|s?css)$/,
-      loaders: [
-        'style',
-        'css?camelCase&modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]',
-        'postcss',
-        'sass'
-      ]
-    }]
+      test: /\.json$/,
+      loader: 'json'
+    },
+      {
+        test: /\.(sass|s?css)$/,
+        loaders: [
+          'style',
+          'css?camelCase&modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]',
+          'postcss',
+          'sass'
+        ]
+      }]
   },
   postcss: () => {
     return [

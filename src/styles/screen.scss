@@ -1,4 +1,37 @@
+// @import 'utility';
+// $base-text-size: 16px;
+// $base-font-family: sans-serif;
+//
+// html {
+//   text-size-adjust: 100%;
+// }
+//
+// body {
+//   @include font-smoothing(on);
+//   margin: 0;
+//   font: $base-text-size / 1 $base-font-family;
+// }
+// h1 {
+//   text-align: center;
+// }
+// // div {
+// //   display: flex;
+// //   justify-content: center;
+// // }
+//
+// td {
+//   border: 5px solid black;
+// }
+//
+// table {
+//   margin-top: 40px;
+//   // margin-bottom: 20px;
+//   display: flex;
+//   justify-content: center;
+//   flex-wrap: wrap;
+// }
 @import 'utility';
+
 $base-text-size: 16px;
 $base-font-family: sans-serif;
 
@@ -6,27 +39,11 @@ html {
   text-size-adjust: 100%;
 }
 
-body {
+div {
   @include font-smoothing(on);
   margin: 0;
   font: $base-text-size / 1 $base-font-family;
-}
-h1 {
-  text-align: center;
-}
-// div {
-//   display: flex;
-//   justify-content: center;
-// }
-
-td {
-  border: 5px solid black;
-}
-
-table {
-  margin-top: 40px;
-  // margin-bottom: 20px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  // background-image: url('http://previews.123rf.com/images/bozenafulawka/bozenafulawka1305/bozenafulawka130500003/19584885-Sea-shells-on-sandy-beach-background-with-copy-space-Top-view-Stock-Photo.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
